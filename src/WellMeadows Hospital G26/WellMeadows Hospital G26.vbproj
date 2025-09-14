@@ -1,0 +1,1133 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{CF6BA670-000D-47F5-AF35-C5F892385FE2}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <StartupObject>WellMeadows_Hospital_G26.My.MyApplication</StartupObject>
+    <RootNamespace>WellMeadows_Hospital_G26</RootNamespace>
+    <AssemblyName>WellMeadows Hospital G26</AssemblyName>
+    <FileAlignment>512</FileAlignment>
+    <MyType>WindowsForms</MyType>
+    <TargetFrameworkVersion>v4.8.1</TargetFrameworkVersion>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <PublishUrl>D:\1101173\73Setup\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ApplicationRevision>14</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <PublishWizardCompleted>true</PublishWizardCompleted>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <DefineDebug>true</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DocumentationFile>WellMeadows Hospital G26.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <DefineDebug>false</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DocumentationFile>WellMeadows Hospital G26.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionExplicit>On</OptionExplicit>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionCompare>Binary</OptionCompare>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionStrict>Off</OptionStrict>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionInfer>On</OptionInfer>
+  </PropertyGroup>
+  <PropertyGroup>
+    <SignManifests>true</SignManifests>
+  </PropertyGroup>
+  <PropertyGroup>
+    <TargetZone>LocalIntranet</TargetZone>
+  </PropertyGroup>
+  <PropertyGroup>
+    <GenerateManifests>true</GenerateManifests>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationManifest>My Project\app.manifest</ApplicationManifest>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ManifestCertificateThumbprint>B91AF8C198D073830B4B1DF357DAA86B26D104FC</ManifestCertificateThumbprint>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ManifestKeyFile>WellMeadows Hospital G26_TemporaryKey.pfx</ManifestKeyFile>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.ReportViewer.Common, Version=15.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.ReportingServices.ReportViewerControl.Winforms.150.1652.0\lib\net40\Microsoft.ReportViewer.Common.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.ReportViewer.DataVisualization, Version=15.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.ReportingServices.ReportViewerControl.Winforms.150.1652.0\lib\net40\Microsoft.ReportViewer.DataVisualization.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.ReportViewer.Design, Version=15.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.ReportingServices.ReportViewerControl.Winforms.150.1652.0\lib\net40\Microsoft.ReportViewer.Design.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.ReportViewer.ProcessingObjectModel, Version=15.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.ReportingServices.ReportViewerControl.Winforms.150.1652.0\lib\net40\Microsoft.ReportViewer.ProcessingObjectModel.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.ReportViewer.WinForms, Version=15.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.ReportingServices.ReportViewerControl.Winforms.150.1652.0\lib\net40\Microsoft.ReportViewer.WinForms.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.SqlServer.Types, Version=14.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.SqlServer.Types.14.0.314.76\lib\net40\Microsoft.SqlServer.Types.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.DirectoryServices" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Web.Extensions" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Net.Http" />
+  </ItemGroup>
+  <ItemGroup>
+    <Import Include="Microsoft.VisualBasic" />
+    <Import Include="System" />
+    <Import Include="System.Collections" />
+    <Import Include="System.Collections.Generic" />
+    <Import Include="System.Data" />
+    <Import Include="System.Drawing" />
+    <Import Include="System.Diagnostics" />
+    <Import Include="System.Windows.Forms" />
+    <Import Include="System.Linq" />
+    <Import Include="System.Xml.Linq" />
+    <Import Include="System.Threading.Tasks" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Address LookUp.Designer.vb">
+      <DependentUpon>Address LookUp.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Address LookUp.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Address.Designer.vb">
+      <DependentUpon>Address.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Address.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AllocationBed.Designer.vb">
+      <DependentUpon>AllocationBed.vb</DependentUpon>
+    </Compile>
+    <Compile Include="AllocationBed.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AllocationWard.Designer.vb">
+      <DependentUpon>AllocationWard.vb</DependentUpon>
+    </Compile>
+    <Compile Include="AllocationWard.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Appointment.Designer.vb">
+      <DependentUpon>Appointment.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Appointment.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Bed Allocation LookUP.Designer.vb">
+      <DependentUpon>Bed Allocation LookUP.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Bed Allocation LookUP.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Bed lookup.Designer.vb">
+      <DependentUpon>Bed lookup.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Bed lookup.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Bed.Designer.vb">
+      <DependentUpon>Bed.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Bed.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DatabaseG26DataSet1.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DatabaseG26DataSet1.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="DatabaseG26DataSet10.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DatabaseG26DataSet10.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="DatabaseG26DataSet3.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DatabaseG26DataSet3.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="DatabaseG26DataSet4.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DatabaseG26DataSet4.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="DatabaseG26DataSet5.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DatabaseG26DataSet5.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="DatabaseG26DataSet6.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DatabaseG26DataSet6.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="DatabaseG26DataSet7.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DatabaseG26DataSet7.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="DatabaseG26DataSet8.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DatabaseG26DataSet8.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="DatabaseG26DataSet9.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DatabaseG26DataSet9.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="DatabaseG26DataSetView.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DatabaseG26DataSetView.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="DataSetStaffDetail.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DataSetStaffDetail.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="DrugReport.Designer.vb">
+      <DependentUpon>DrugReport.vb</DependentUpon>
+    </Compile>
+    <Compile Include="DrugReport.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DrugReqLookup.Designer.vb">
+      <DependentUpon>DrugReqLookup.vb</DependentUpon>
+    </Compile>
+    <Compile Include="DrugReqLookup.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DrugRequisitionForm.Designer.vb">
+      <DependentUpon>DrugRequisitionForm.vb</DependentUpon>
+    </Compile>
+    <Compile Include="DrugRequisitionForm.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Drug_Detail.Designer.vb">
+      <DependentUpon>Drug_Detail.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Drug_Detail.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Drug_head.Designer.vb">
+      <DependentUpon>Drug_head.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Drug_head.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="EmployeeContract.Designer.vb">
+      <DependentUpon>EmployeeContract.vb</DependentUpon>
+    </Compile>
+    <Compile Include="EmployeeContract.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Experience.Designer.vb">
+      <DependentUpon>Experience.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Experience.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form2.Designer.vb">
+      <DependentUpon>Form2.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Form2.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="InPatientDetail.Designer.vb">
+      <DependentUpon>InPatientDetail.vb</DependentUpon>
+    </Compile>
+    <Compile Include="InPatientDetail.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="InpatientRegister.Designer.vb">
+      <DependentUpon>InpatientRegister.vb</DependentUpon>
+    </Compile>
+    <Compile Include="InpatientRegister.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="OutPatient Appointment Report.Designer.vb">
+      <DependentUpon>OutPatient Appointment Report.vb</DependentUpon>
+    </Compile>
+    <Compile Include="OutPatient Appointment Report.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Paeitent next of kin.Designer.vb">
+      <DependentUpon>Paeitent next of kin.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Paeitent next of kin.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Paitent Waiting List Report.Designer.vb">
+      <DependentUpon>Paitent Waiting List Report.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Paitent Waiting List Report.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Patient Appointment Report.Designer.vb">
+      <DependentUpon>Patient Appointment Report.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Patient Appointment Report.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Patient Details.Designer.vb">
+      <DependentUpon>Patient Details.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Patient Details.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Patient Medication Form.Designer.vb">
+      <DependentUpon>Patient Medication Form.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Patient Medication Form.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Patient Medicine Report.Designer.vb">
+      <DependentUpon>Patient Medicine Report.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Patient Medicine Report.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PatientRegister.Designer.vb">
+      <DependentUpon>PatientRegister.vb</DependentUpon>
+    </Compile>
+    <Compile Include="PatientRegister.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PatientRegister2.Designer.vb">
+      <DependentUpon>PatientRegister2.vb</DependentUpon>
+    </Compile>
+    <Compile Include="PatientRegister2.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Qualification.Designer.vb">
+      <DependentUpon>Qualification.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Qualification.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ClinicShift LookUP.Designer.vb">
+      <DependentUpon>ClinicShift LookUP.vb</DependentUpon>
+    </Compile>
+    <Compile Include="ClinicShift LookUP.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Doctor LookUp.Designer.vb">
+      <DependentUpon>Doctor LookUp.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Doctor LookUp.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Local Clinic LookUp.Designer.vb">
+      <DependentUpon>Local Clinic LookUp.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Local Clinic LookUp.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="OutClinic LookUp.Designer.vb">
+      <DependentUpon>OutClinic LookUp.vb</DependentUpon>
+    </Compile>
+    <Compile Include="OutClinic LookUp.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ClinicShift.Designer.vb">
+      <DependentUpon>ClinicShift.vb</DependentUpon>
+    </Compile>
+    <Compile Include="ClinicShift.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DatabaseG26DataSet.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DatabaseG26DataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="DatabaseG26DataSet2.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DatabaseG26DataSet2.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="DatabaseG26DataSetReq_Details.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DatabaseG26DataSetReq_Details.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="InPatients.Designer.vb">
+      <DependentUpon>InPatients.vb</DependentUpon>
+    </Compile>
+    <Compile Include="InPatients.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Local Clinic.Designer.vb">
+      <DependentUpon>Local Clinic.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Local Clinic.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="local doctor .Designer.vb">
+      <DependentUpon>local doctor .vb</DependentUpon>
+    </Compile>
+    <Compile Include="local doctor .vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="log.Designer.vb">
+      <DependentUpon>log.vb</DependentUpon>
+    </Compile>
+    <Compile Include="log.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MainMenu.Designer.vb">
+      <DependentUpon>MainMenu.vb</DependentUpon>
+    </Compile>
+    <Compile Include="MainMenu.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Medication_Details.Designer.vb">
+      <DependentUpon>Medication_Details.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Medication_Details.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Medication_Head.Designer.vb">
+      <DependentUpon>Medication_Head.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Medication_Head.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="My Project\AssemblyInfo.vb" />
+    <Compile Include="My Project\Application.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Application.myapp</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <Compile Include="My Project\Resources.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\Settings.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="Out patient clinic.Designer.vb">
+      <DependentUpon>Out patient clinic.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Out patient clinic.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Patient Lookup.Designer.vb">
+      <DependentUpon>Patient Lookup.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Patient Lookup.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Patient Ward Allocation LookUp.Designer.vb">
+      <DependentUpon>Patient Ward Allocation LookUp.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Patient Ward Allocation LookUp.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Patients.Designer.vb">
+      <DependentUpon>Patients.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Patients.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Phamarcetical Lookup.Designer.vb">
+      <DependentUpon>Phamarcetical Lookup.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Phamarcetical Lookup.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SearchT.Designer.vb">
+      <DependentUpon>SearchT.vb</DependentUpon>
+    </Compile>
+    <Compile Include="SearchT.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Shift.Designer.vb">
+      <DependentUpon>Shift.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Shift.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ShiftID LookUp.Designer.vb">
+      <DependentUpon>ShiftID LookUp.vb</DependentUpon>
+    </Compile>
+    <Compile Include="ShiftID LookUp.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SQLEXPRESS_DatabaseG26DataSet.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>SQLEXPRESS_DatabaseG26DataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Staff Allocation Report.Designer.vb">
+      <DependentUpon>Staff Allocation Report.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Staff Allocation Report.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Staff Allocation.Designer.vb">
+      <DependentUpon>Staff Allocation.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Staff Allocation.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Staff Details.Designer.vb">
+      <DependentUpon>Staff Details.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Staff Details.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Staff LookUp.Designer.vb">
+      <DependentUpon>Staff LookUp.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Staff LookUp.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Staff.Designer.vb">
+      <DependentUpon>Staff.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Staff.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="StaffRegister.Designer.vb">
+      <DependentUpon>StaffRegister.vb</DependentUpon>
+    </Compile>
+    <Compile Include="StaffRegister.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="StaffRegister2.Designer.vb">
+      <DependentUpon>StaffRegister2.vb</DependentUpon>
+    </Compile>
+    <Compile Include="StaffRegister2.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="StaffRegister3.Designer.vb">
+      <DependentUpon>StaffRegister3.vb</DependentUpon>
+    </Compile>
+    <Compile Include="StaffRegister3.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Supplier.Designer.vb">
+      <DependentUpon>Supplier.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Supplier.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Surgical Requi.Designer.vb">
+      <DependentUpon>Surgical Requi.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Surgical Requi.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Surgical Sup LookUp.Designer.vb">
+      <DependentUpon>Surgical Sup LookUp.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Surgical Sup LookUp.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SurgicalIDLookup.Designer.vb">
+      <DependentUpon>SurgicalIDLookup.vb</DependentUpon>
+    </Compile>
+    <Compile Include="SurgicalIDLookup.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SurgicalReqReport.Designer.vb">
+      <DependentUpon>SurgicalReqReport.vb</DependentUpon>
+    </Compile>
+    <Compile Include="SurgicalReqReport.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Surgireq_detail .Designer.vb">
+      <DependentUpon>Surgireq_detail .vb</DependentUpon>
+    </Compile>
+    <Compile Include="Surgireq_detail .vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SuricalEquipmentRequisition.Designer.vb">
+      <DependentUpon>SuricalEquipmentRequisition.vb</DependentUpon>
+    </Compile>
+    <Compile Include="SuricalEquipmentRequisition.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="User.Designer.vb">
+      <DependentUpon>User.vb</DependentUpon>
+    </Compile>
+    <Compile Include="User.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="userLookup.Designer.vb">
+      <DependentUpon>userLookup.vb</DependentUpon>
+    </Compile>
+    <Compile Include="userLookup.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Ward LookUp.Designer.vb">
+      <DependentUpon>Ward LookUp.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Ward LookUp.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Ward shift.Designer.vb">
+      <DependentUpon>Ward shift.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Ward shift.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Ward.Designer.vb">
+      <DependentUpon>Ward.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Ward.vb">
+      <SubType>Form</SubType>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Address LookUp.resx">
+      <DependentUpon>Address LookUp.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Address.resx">
+      <DependentUpon>Address.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AllocationBed.resx">
+      <DependentUpon>AllocationBed.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AllocationWard.resx">
+      <DependentUpon>AllocationWard.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Appointment.resx">
+      <DependentUpon>Appointment.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Bed Allocation LookUP.resx">
+      <DependentUpon>Bed Allocation LookUP.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Bed lookup.resx">
+      <DependentUpon>Bed lookup.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Bed.resx">
+      <DependentUpon>Bed.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ClinicShift.resx">
+      <DependentUpon>ClinicShift.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Doctor LookUp.resx">
+      <DependentUpon>Doctor LookUp.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DrugReport.resx">
+      <DependentUpon>DrugReport.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DrugReqLookup.resx">
+      <DependentUpon>DrugReqLookup.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DrugRequisitionForm.resx">
+      <DependentUpon>DrugRequisitionForm.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Drug_Detail.resx">
+      <DependentUpon>Drug_Detail.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Drug_head.resx">
+      <DependentUpon>Drug_head.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="EmployeeContract.resx">
+      <DependentUpon>EmployeeContract.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Experience.resx">
+      <DependentUpon>Experience.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form2.resx">
+      <DependentUpon>Form2.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="InPatientDetail.resx">
+      <DependentUpon>InPatientDetail.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="InpatientRegister.resx">
+      <DependentUpon>InpatientRegister.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="INPatientReport.rdlc" />
+    <EmbeddedResource Include="InPatients.resx">
+      <DependentUpon>InPatients.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Local Clinic LookUp.resx">
+      <DependentUpon>Local Clinic LookUp.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Local Clinic.resx">
+      <DependentUpon>Local Clinic.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="local doctor .resx">
+      <DependentUpon>local doctor .vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="log.resx">
+      <DependentUpon>log.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MainMenu.resx">
+      <DependentUpon>MainMenu.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Medication_Details.resx">
+      <DependentUpon>Medication_Details.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Medication_Head.resx">
+      <DependentUpon>Medication_Head.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="My Project\Resources.resx">
+      <Generator>VbMyResourcesResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.vb</LastGenOutput>
+      <CustomToolNamespace>My.Resources</CustomToolNamespace>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Out patient clinic.resx">
+      <DependentUpon>Out patient clinic.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="OutClinic LookUp.resx">
+      <DependentUpon>OutClinic LookUp.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="OutPatient Appointment Report.resx">
+      <DependentUpon>OutPatient Appointment Report.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Outpatient Appointment.rdlc" />
+    <EmbeddedResource Include="Paeitent next of kin.resx">
+      <DependentUpon>Paeitent next of kin.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Paitent Waiting List Report.resx">
+      <DependentUpon>Paitent Waiting List Report.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Patient Appointment Report.rdlc" />
+    <EmbeddedResource Include="Patient Appointment Report.resx">
+      <DependentUpon>Patient Appointment Report.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Patient Details.resx">
+      <DependentUpon>Patient Details.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Patient Lookup.resx">
+      <DependentUpon>Patient Lookup.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Patient Medication Form.resx">
+      <DependentUpon>Patient Medication Form.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Patient Medicine Report.resx">
+      <DependentUpon>Patient Medicine Report.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Patient Medicine.rdlc" />
+    <EmbeddedResource Include="Patient Waiting list report.rdlc" />
+    <EmbeddedResource Include="Patient Ward Allocation LookUp.resx">
+      <DependentUpon>Patient Ward Allocation LookUp.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PatientRegister.resx">
+      <DependentUpon>PatientRegister.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PatientRegister2.resx">
+      <DependentUpon>PatientRegister2.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PatientReport.rdlc" />
+    <EmbeddedResource Include="Patients.resx">
+      <DependentUpon>Patients.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Phamarcetical Lookup.resx">
+      <DependentUpon>Phamarcetical Lookup.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PharmaceuticalReport.rdlc" />
+    <EmbeddedResource Include="Qualification.resx">
+      <DependentUpon>Qualification.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Report1.rdlc" />
+    <EmbeddedResource Include="Staff Allocation Report.resx">
+      <DependentUpon>Staff Allocation Report.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="StaffAllocationReport.rdlc" />
+    <EmbeddedResource Include="SearchT.resx">
+      <DependentUpon>SearchT.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ClinicShift LookUP.resx">
+      <DependentUpon>ClinicShift LookUP.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Shift.resx">
+      <DependentUpon>Shift.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ShiftID LookUp.resx">
+      <DependentUpon>ShiftID LookUp.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Staff Allocation.resx">
+      <DependentUpon>Staff Allocation.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Staff Details.resx">
+      <DependentUpon>Staff Details.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Staff LookUp.resx">
+      <DependentUpon>Staff LookUp.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Staff.resx">
+      <DependentUpon>Staff.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="StaffRegister.resx">
+      <DependentUpon>StaffRegister.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="StaffRegister2.resx">
+      <DependentUpon>StaffRegister2.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="StaffRegister3.resx">
+      <DependentUpon>StaffRegister3.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Supplier.resx">
+      <DependentUpon>Supplier.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Surgical Requi.resx">
+      <DependentUpon>Surgical Requi.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Surgical Sup LookUp.resx">
+      <DependentUpon>Surgical Sup LookUp.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SurgicalIDLookup.resx">
+      <DependentUpon>SurgicalIDLookup.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SurgicalReqReport.rdlc" />
+    <EmbeddedResource Include="SurgicalReqReport.resx">
+      <DependentUpon>SurgicalReqReport.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Surgireq_detail .resx">
+      <DependentUpon>Surgireq_detail .vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SuricalEquipmentRequisition.resx">
+      <DependentUpon>SuricalEquipmentRequisition.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="User.resx">
+      <DependentUpon>User.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="userLookup.resx">
+      <DependentUpon>userLookup.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Ward LookUp.resx">
+      <DependentUpon>Ward LookUp.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Ward shift.resx">
+      <DependentUpon>Ward shift.vb</DependentUpon>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="DatabaseG26DataSet.xsc">
+      <DependentUpon>DatabaseG26DataSet.xsd</DependentUpon>
+    </None>
+    <None Include="DatabaseG26DataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>DatabaseG26DataSet.Designer.vb</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="DatabaseG26DataSet.xss">
+      <DependentUpon>DatabaseG26DataSet.xsd</DependentUpon>
+    </None>
+    <None Include="DatabaseG26DataSet1.xsc">
+      <DependentUpon>DatabaseG26DataSet1.xsd</DependentUpon>
+    </None>
+    <None Include="DatabaseG26DataSet1.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>DatabaseG26DataSet1.Designer.vb</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="DatabaseG26DataSet1.xss">
+      <DependentUpon>DatabaseG26DataSet1.xsd</DependentUpon>
+    </None>
+    <None Include="DatabaseG26DataSet10.xsc">
+      <DependentUpon>DatabaseG26DataSet10.xsd</DependentUpon>
+    </None>
+    <None Include="DatabaseG26DataSet10.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>DatabaseG26DataSet10.Designer.vb</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="DatabaseG26DataSet10.xss">
+      <DependentUpon>DatabaseG26DataSet10.xsd</DependentUpon>
+    </None>
+    <None Include="DatabaseG26DataSet2.xsc">
+      <DependentUpon>DatabaseG26DataSet2.xsd</DependentUpon>
+    </None>
+    <None Include="DatabaseG26DataSet2.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>DatabaseG26DataSet2.Designer.vb</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="DatabaseG26DataSet2.xss">
+      <DependentUpon>DatabaseG26DataSet2.xsd</DependentUpon>
+    </None>
+    <None Include="DatabaseG26DataSet3.xsc">
+      <DependentUpon>DatabaseG26DataSet3.xsd</DependentUpon>
+    </None>
+    <None Include="DatabaseG26DataSet3.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>DatabaseG26DataSet3.Designer.vb</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="DatabaseG26DataSet3.xss">
+      <DependentUpon>DatabaseG26DataSet3.xsd</DependentUpon>
+    </None>
+    <None Include="DatabaseG26DataSet4.xsc">
+      <DependentUpon>DatabaseG26DataSet4.xsd</DependentUpon>
+    </None>
+    <None Include="DatabaseG26DataSet4.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>DatabaseG26DataSet4.Designer.vb</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="DatabaseG26DataSet4.xss">
+      <DependentUpon>DatabaseG26DataSet4.xsd</DependentUpon>
+    </None>
+    <None Include="DatabaseG26DataSet5.xsc">
+      <DependentUpon>DatabaseG26DataSet5.xsd</DependentUpon>
+    </None>
+    <None Include="DatabaseG26DataSet5.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>DatabaseG26DataSet5.Designer.vb</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="DatabaseG26DataSet5.xss">
+      <DependentUpon>DatabaseG26DataSet5.xsd</DependentUpon>
+    </None>
+    <None Include="DatabaseG26DataSet6.xsc">
+      <DependentUpon>DatabaseG26DataSet6.xsd</DependentUpon>
+    </None>
+    <None Include="DatabaseG26DataSet6.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>DatabaseG26DataSet6.Designer.vb</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="DatabaseG26DataSet6.xss">
+      <DependentUpon>DatabaseG26DataSet6.xsd</DependentUpon>
+    </None>
+    <None Include="DatabaseG26DataSet7.xsc">
+      <DependentUpon>DatabaseG26DataSet7.xsd</DependentUpon>
+    </None>
+    <None Include="DatabaseG26DataSet7.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>DatabaseG26DataSet7.Designer.vb</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="DatabaseG26DataSet7.xss">
+      <DependentUpon>DatabaseG26DataSet7.xsd</DependentUpon>
+    </None>
+    <None Include="DatabaseG26DataSet8.xsc">
+      <DependentUpon>DatabaseG26DataSet8.xsd</DependentUpon>
+    </None>
+    <None Include="DatabaseG26DataSet8.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>DatabaseG26DataSet8.Designer.vb</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="DatabaseG26DataSet8.xss">
+      <DependentUpon>DatabaseG26DataSet8.xsd</DependentUpon>
+    </None>
+    <None Include="DatabaseG26DataSet9.xsc">
+      <DependentUpon>DatabaseG26DataSet9.xsd</DependentUpon>
+    </None>
+    <None Include="DatabaseG26DataSet9.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>DatabaseG26DataSet9.Designer.vb</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="DatabaseG26DataSet9.xss">
+      <DependentUpon>DatabaseG26DataSet9.xsd</DependentUpon>
+    </None>
+    <None Include="DatabaseG26DataSetReq_Details.xsc">
+      <DependentUpon>DatabaseG26DataSetReq_Details.xsd</DependentUpon>
+    </None>
+    <None Include="DatabaseG26DataSetReq_Details.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>DatabaseG26DataSetReq_Details.Designer.vb</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="DatabaseG26DataSetReq_Details.xss">
+      <DependentUpon>DatabaseG26DataSetReq_Details.xsd</DependentUpon>
+    </None>
+    <None Include="DatabaseG26DataSetView.xsc">
+      <DependentUpon>DatabaseG26DataSetView.xsd</DependentUpon>
+    </None>
+    <None Include="DatabaseG26DataSetView.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>DatabaseG26DataSetView.Designer.vb</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="DatabaseG26DataSetView.xss">
+      <DependentUpon>DatabaseG26DataSetView.xsd</DependentUpon>
+    </None>
+    <None Include="DataSetStaffDetail.xsc">
+      <DependentUpon>DataSetStaffDetail.xsd</DependentUpon>
+    </None>
+    <None Include="DataSetStaffDetail.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>DataSetStaffDetail.Designer.vb</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="DataSetStaffDetail.xss">
+      <DependentUpon>DataSetStaffDetail.xsd</DependentUpon>
+    </None>
+    <None Include="My Project\app.manifest" />
+    <None Include="My Project\Application.myapp">
+      <Generator>MyApplicationCodeGenerator</Generator>
+      <LastGenOutput>Application.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="My Project\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <CustomToolNamespace>My</CustomToolNamespace>
+      <LastGenOutput>Settings.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="App.config" />
+    <None Include="SQLEXPRESS_DatabaseG26DataSet.xsc">
+      <DependentUpon>SQLEXPRESS_DatabaseG26DataSet.xsd</DependentUpon>
+    </None>
+    <None Include="SQLEXPRESS_DatabaseG26DataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>SQLEXPRESS_DatabaseG26DataSet.Designer.vb</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="SQLEXPRESS_DatabaseG26DataSet.xss">
+      <DependentUpon>SQLEXPRESS_DatabaseG26DataSet.xsd</DependentUpon>
+    </None>
+    <None Include="WellMeadows Hospital G26_TemporaryKey.pfx" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="packages.config" />
+    <None Include="Resource\2264019-200.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resource\Lovepik_com-380156115-simple-thin-straight-line-thin-on-both-sides-black-simple-lines.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resource\logo.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resource\user %281%29 %281%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resource\4856668 %281%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resource\4369555 %282%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resource\red-delete-10437 %281%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resource\white-search-icon-button-png-img-735811696240431a0p3ex0i2v-removebg-preview.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resource\hospital-2-128.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resource\vejq5m3sm4396c01m3etnnp4r8.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resource\1 Add.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resource\1 Delete.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resource\1 Save.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resource\2 Search icon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resource\Staff icon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resource\All Patient.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resource\InPatient icon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resource\btnAll Patient.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resource\btnInPatient icon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resource\btnStaff icon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resource\Medical icon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resource\Patient Medicine.png" />
+    <None Include="Resource\appointment-4 %281%29.png" />
+    <None Include="Resource\Surgical.png" />
+    <None Include="Resource\report icon.png" />
+    <None Include="Resource\local doctor icon.png" />
+    <None Include="Resource\clinic icon.png" />
+    <None Include="Resource\hospital-building-icon-6.png" />
+    <None Include="Resource\Shift.png" />
+    <None Include="Resource\bed cion.png" />
+    <None Include="Resource\Suppliers icon.png" />
+    <None Include="Resource\next.png" />
+    <Content Include="SqlServerTypes\Loader.cs" />
+    <Content Include="SqlServerTypes\readme.htm" />
+    <Content Include="SqlServerTypes\x64\msvcr120.dll">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="SqlServerTypes\x64\SqlServerSpatial140.dll">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="SqlServerTypes\x86\msvcr120.dll">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="SqlServerTypes\x86\SqlServerSpatial140.dll">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include=".NETFramework,Version=v4.8.1">
+      <Visible>False</Visible>
+      <ProductName>Microsoft .NET Framework 4.8.1 %28x86 and x64%29</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.VisualBasic.targets" />
+</Project>
