@@ -1,0 +1,88 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="DatabaseG26DataSet3" targetNamespace="http://tempuri.org/DatabaseG26DataSet3.xsd" xmlns:mstns="http://tempuri.org/DatabaseG26DataSet3.xsd" xmlns="http://tempuri.org/DatabaseG26DataSet3.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="0" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections>
+          <Connection AppSettingsObjectName="MySettings" AppSettingsPropertyName="DatabaseG26ConnectionString" ConnectionStringObject="" IsAppSettingsProperty="true" Modifier="Assembly" Name="DatabaseG26ConnectionString (MySettings)" ParameterPrefix="@" PropertyReference="ApplicationSettings.WellMeadows_Hospital_G26.My.MySettings.GlobalReference.Default.DatabaseG26ConnectionString" Provider="System.Data.SqlClient" />
+        </Connections>
+        <Tables>
+          <TableAdapter BaseClass="System.ComponentModel.Component" DataAccessorModifier="AutoLayout, AnsiClass, Class, Public" DataAccessorName="Staff_Allocation_ViewTableAdapter" GeneratorDataComponentClassName="Staff_Allocation_ViewTableAdapter" Name="Staff_Allocation_View" UserDataComponentName="Staff_Allocation_ViewTableAdapter">
+            <MainSource>
+              <DbSource ConnectionRef="DatabaseG26ConnectionString (MySettings)" DbObjectName="DatabaseG26.dbo.Staff_Allocation_View" DbObjectType="View" FillMethodModifier="Public" FillMethodName="Fill" GenerateMethods="Both" GenerateShortCommands="false" GeneratorGetMethodName="GetData" GeneratorSourceName="Fill" GetMethodModifier="Public" GetMethodName="GetData" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetData" UserSourceName="Fill">
+                <SelectCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="false">
+                    <CommandText>SELECT Staff_Number, Staff_Name, Position, Shift_Date, Shift_Type, Shift_Start, Shift_End, Work_Location FROM dbo.Staff_Allocation_View</CommandText>
+                    <Parameters />
+                  </DbCommand>
+                </SelectCommand>
+              </DbSource>
+            </MainSource>
+            <Mappings>
+              <Mapping SourceColumn="Staff_Number" DataSetColumn="Staff_Number" />
+              <Mapping SourceColumn="Staff_Name" DataSetColumn="Staff_Name" />
+              <Mapping SourceColumn="Position" DataSetColumn="Position" />
+              <Mapping SourceColumn="Shift_Date" DataSetColumn="Shift_Date" />
+              <Mapping SourceColumn="Shift_Type" DataSetColumn="Shift_Type" />
+              <Mapping SourceColumn="Shift_Start" DataSetColumn="Shift_Start" />
+              <Mapping SourceColumn="Shift_End" DataSetColumn="Shift_End" />
+              <Mapping SourceColumn="Work_Location" DataSetColumn="Work_Location" />
+            </Mappings>
+            <Sources />
+          </TableAdapter>
+        </Tables>
+        <Sources />
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="DatabaseG26DataSet3" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:EnableTableAdapterManager="True" msprop:Generator_UserDSName="DatabaseG26DataSet3" msprop:Generator_DataSetName="DatabaseG26DataSet3">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="Staff_Allocation_View" msprop:Generator_RowEvHandlerName="Staff_Allocation_ViewRowChangeEventHandler" msprop:Generator_RowDeletedName="Staff_Allocation_ViewRowDeleted" msprop:Generator_RowDeletingName="Staff_Allocation_ViewRowDeleting" msprop:Generator_RowEvArgName="Staff_Allocation_ViewRowChangeEvent" msprop:Generator_TablePropName="Staff_Allocation_View" msprop:Generator_RowChangedName="Staff_Allocation_ViewRowChanged" msprop:Generator_RowChangingName="Staff_Allocation_ViewRowChanging" msprop:Generator_TableClassName="Staff_Allocation_ViewDataTable" msprop:Generator_RowClassName="Staff_Allocation_ViewRow" msprop:Generator_TableVarName="tableStaff_Allocation_View" msprop:Generator_UserTableName="Staff_Allocation_View">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="Staff_Number" msprop:Generator_ColumnPropNameInRow="Staff_Number" msprop:Generator_ColumnPropNameInTable="Staff_NumberColumn" msprop:Generator_ColumnVarNameInTable="columnStaff_Number" msprop:Generator_UserColumnName="Staff_Number">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="4" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="Staff_Name" msprop:Generator_ColumnPropNameInRow="Staff_Name" msprop:Generator_ColumnPropNameInTable="Staff_NameColumn" msprop:Generator_ColumnVarNameInTable="columnStaff_Name" msprop:Generator_UserColumnName="Staff_Name">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="101" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="Position" msprop:Generator_ColumnPropNameInRow="Position" msprop:Generator_ColumnPropNameInTable="PositionColumn" msprop:Generator_ColumnVarNameInTable="columnPosition" msprop:Generator_UserColumnName="Position">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="Shift_Date" msprop:Generator_ColumnPropNameInRow="Shift_Date" msprop:Generator_ColumnPropNameInTable="Shift_DateColumn" msprop:Generator_ColumnVarNameInTable="columnShift_Date" msprop:Generator_UserColumnName="Shift_Date" type="xs:dateTime" />
+              <xs:element name="Shift_Type" msprop:Generator_ColumnPropNameInRow="Shift_Type" msprop:Generator_ColumnPropNameInTable="Shift_TypeColumn" msprop:Generator_ColumnVarNameInTable="columnShift_Type" msprop:Generator_UserColumnName="Shift_Type">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="Shift_Start" msprop:Generator_ColumnPropNameInRow="Shift_Start" msprop:Generator_ColumnPropNameInTable="Shift_StartColumn" msprop:Generator_ColumnVarNameInTable="columnShift_Start" msprop:Generator_UserColumnName="Shift_Start" type="xs:duration" />
+              <xs:element name="Shift_End" msprop:Generator_ColumnPropNameInRow="Shift_End" msprop:Generator_ColumnPropNameInTable="Shift_EndColumn" msprop:Generator_ColumnVarNameInTable="columnShift_End" msprop:Generator_UserColumnName="Shift_End" type="xs:duration" />
+              <xs:element name="Work_Location" msprop:Generator_ColumnPropNameInRow="Work_Location" msprop:Generator_ColumnPropNameInTable="Work_LocationColumn" msprop:Generator_ColumnVarNameInTable="columnWork_Location" msprop:Generator_UserColumnName="Work_Location">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="100" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>
